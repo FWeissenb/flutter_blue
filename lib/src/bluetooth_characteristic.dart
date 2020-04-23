@@ -23,7 +23,7 @@ class BluetoothCharacteristic {
 
   BehaviorSubject<List<int>> _value;
   Stream<List<int>> get value => Observable.merge([
-        _value.stream,
+        //_value.stream,
         _onValueChangedStream,
       ]);
 
